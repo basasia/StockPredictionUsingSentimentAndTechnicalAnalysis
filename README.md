@@ -17,21 +17,56 @@ This web application fetches the news articles from finnhub API and retrieves th
 
 ##Design
 
+For the system:
+
+![image](https://user-images.githubusercontent.com/60352487/120921896-55457c80-c6f0-11eb-8ce9-13164fbf58b3.png)
+
+For the interface:
+
 The design of this application followed the basic pattern of regular application such that it has interface with clearly intructions on how to use, every buttons has it own label describes what is it and the application has an error handling functionality that display an pop-up error messages when the user raised some errors. 
-
-
 
 
 ##Run Locally
 
-- Clone the folder UWEAccommodationSystem
-- Make sure to install Netbeans
-- Run the jar file \UWEAccommodationSystem\dist\UWEAccommodationSystem.jar
-- You can login with username: warden, hallmanager or admin. Password: pass
-- Optionally, the application can be run by using Netbeans then run the file \UWEAccommodationSystem\src\uweaccommodationsystem\guicontrollers\GUIRoot  
+- Clone the folder StockPredictionUsingSentimentAndTechnicalAnalysis
+- Make sure to install Python 
+- Change the file path in \StockPredictionUsingSentimentAndTechnicalAnalysis\ClassifierModel.py to where you store the model
+
+ ![image](https://user-images.githubusercontent.com/60352487/120923534-41524880-c6f9-11eb-9c98-0ad4adb4958e.png)
+ 
+- Optionally, you can change the classifier model to evaluate the performance. 
+- Open the command prompt and use command "streamlit run C:/StockPredictionUsingSentimentAndTechnicalAnalysis/TradingWebApp.py" to run the web application.
+
 
 ##Tech Stack
 
-- Netbeans
-- JAVA 
-- SceneBuilder
+- Python
+- Web browser
+
+Libraries required: 
+
+- datetime 
+- streamlit 
+- yfinance 
+- pandas 
+- pandas_datareader 
+- PIL 
+- plotly 
+- pickle
+- nltk.sentiment.vader
+
+
+User-interface:
+
+![image](https://user-images.githubusercontent.com/60352487/120924395-cdff0580-c6fd-11eb-8905-72b58b4b8351.png)
+
+![image](https://user-images.githubusercontent.com/60352487/120924646-c7bd5900-c6fe-11eb-98e3-c4cb2eb4db37.png)
+
+![image](https://user-images.githubusercontent.com/60352487/120924671-f0dde980-c6fe-11eb-8919-427a09232174.png)
+
+![image](https://user-images.githubusercontent.com/60352487/120924681-fdfad880-c6fe-11eb-93c3-004abd4240a0.png)
+
+note: the prediction section only available for AAPL stock as all the models have been trained only on the apple stock. Feel free to modify or extend this project for further study.
+
+
+
