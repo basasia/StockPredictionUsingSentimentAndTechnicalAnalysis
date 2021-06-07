@@ -34,7 +34,7 @@ The design of this application followed the basic pattern of regular application
 
  ![image](https://user-images.githubusercontent.com/60352487/120923534-41524880-c6f9-11eb-9c98-0ad4adb4958e.png)
  
-- Optionally, you can change the classifier model to evaluate the performance. 
+- Optionally, you can change the classifier model to evaluate the performance. There are two trained classifier models available which are Random Forest (RF) and Support Vector Machine (SVM). They are located in \StockPredictionUsingSentimentAndTechnicalAnalysis\Trained models  
 - Open the command prompt and use command "streamlit run C:/StockPredictionUsingSentimentAndTechnicalAnalysis/TradingWebApp.py" to run the web application.
 
 
